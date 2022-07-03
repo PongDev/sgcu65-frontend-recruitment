@@ -85,10 +85,10 @@ Pongwiwat Limpasuthum
 
 อย่าลืม mark ว่าทำ feature ไหนแล้วด้วยการใส่ x ลงใน [ ]
 
-- [ ] เว็บไซต์มีหน้าตาเหมือนกับ UX/UI ที่กำหนดไว้
-- [ ] เว็บไซต์สามารถ Responsive ได้ (เว็บใน Mobile และ Desktop ต้องไม่เละ!)
-- [ ] เว็บไซต์สามารถดึงข้อมูลผู้ใช้จาก API มาแสดงได้
-- [ ] User สามารถพิมพ์ค้นหาผู้ใช้ได้จาก
+- [x] เว็บไซต์มีหน้าตาเหมือนกับ UX/UI ที่กำหนดไว้
+- [x] เว็บไซต์สามารถ Responsive ได้ (เว็บใน Mobile และ Desktop ต้องไม่เละ!)
+- [x] เว็บไซต์สามารถดึงข้อมูลผู้ใช้จาก API มาแสดงได้
+- [x] User สามารถพิมพ์ค้นหาผู้ใช้ได้จาก
   - ชื่อ
   - นามสกุล
   - ชื่อผู้ใช้
@@ -127,3 +127,25 @@ Pongwiwat Limpasuthum
 # Applicant Section
 
 ตั้งแต่ส่วนนี้ลงไป เป็นส่วนที่ผู้สมัครสามารถแก้ไขได้ตามอัธยาศัย ซึ่งอาจจะเป็นข้อสันนิษฐานหรือไอเดียเพิ่มเติมก็ได้
+
+## How To Run
+
+This Project Build by React and NextJS
+
+Requirement
+
+- nodejs
+- yarn
+- Web Browser
+
+1. Run คำสั่ง `yarn` เพื่อ Install Dependencies
+
+2. Run คำสั่ง `yarn build` เพื่อ build nextjs
+
+3. Run คำสั่ง `yarn start` เพื่อ run server ขึ้นมาบน Port 3000
+
+## Additional Idea
+
+เพิ่ม Link ไปหน้า Register และ Home บน Navigation Bar
+
+By Pongwiwat Limpasuthum

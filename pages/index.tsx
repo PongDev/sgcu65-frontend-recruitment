@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import HeaderContainer from "../components/name-list/header-container";
+import NameListContainer from "../components/name-list/name-list-container";
 import NavBar from "../components/navbar";
-import RegisterForm from "../components/register_form";
-import SocialLogo from "../components/social_logo";
+import Popup from "../components/popup";
 
 const Home: NextPage = () => {
   return (
@@ -15,18 +16,10 @@ const Home: NextPage = () => {
 
       <div>
         <NavBar />
-        <picture className="kite">
-          <source srcSet="/assets/kite.png" type="png" />
-          <img src="/assets/kite.png" alt="Kite" />
-        </picture>
-        <div className="wrap-container">
-          <RegisterForm />
-          <SocialLogo />
+        <div>
+          <HeaderContainer />
+          <NameListContainer />
         </div>
-      </div>
-      <div id="popup-container">
-        <div id="success-popup" style={{ display: "none" }}></div>
-        <div id="error-popup" style={{ display: "none" }}></div>
       </div>
     </div>
   );

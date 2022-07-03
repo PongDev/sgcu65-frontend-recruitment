@@ -27,6 +27,11 @@ body {
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar div {
   position: relative;
   color: var(--primary-color);
   display: flex;
@@ -36,6 +41,17 @@ body {
   height: 10vh;
   padding: 1rem 1rem;
   padding-bottom: 0.5rem;
+}
+
+.navbar div:last-child {
+  align-items: center;
+  justify-content: end;
+}
+
+.navbar div:last-child a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0.5rem;
 }
 
 .navbar img {
@@ -62,6 +78,16 @@ body {
 .flex-container {
   display: flex;
   justify-content: right;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 1rem 10vw;
+  padding-bottom: 0.5rem;
 }
 
 .wrap-container {
@@ -120,6 +146,11 @@ h6 {
   padding-left: 0.3rem;
 }
 
+#search {
+  line-height: 1.75;
+  width: 200px;
+}
+
 #popup-container {
   position: fixed;
   top: 1rem;
@@ -142,6 +173,25 @@ h6 {
   color: var(--error-color);
 }
 
+#name-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12.5rem);
+  padding: 0 10vw;
+  gap: 1rem;
+}
+
+#name-list-container div {
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+#name-list-container div h3 {
+  color: var(--primary-color);
+}
+
 @media only screen and (max-width: 768px) {
   .kite {
     display: none;
@@ -155,5 +205,24 @@ h6 {
   .icon-container {
     justify-content: center;
     margin: auto;
+  }
+
+  .header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 1rem 10vw;
+    padding-bottom: 0.5rem;
+  }
+
+  #search {
+    width: 80vw;
+    margin: 0.5rem 0;
+  }
+
+  #name-list-container {
+    grid-template-columns: 1fr;
   }
 }
