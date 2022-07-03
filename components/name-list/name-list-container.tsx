@@ -17,16 +17,16 @@ function NameListContainer() {
       const nameListContainer = document.getElementById("name-list-container");
       const searchInput =
         (document.getElementById("search") as HTMLInputElement) ?? null;
-      const searchValue = searchInput ? searchInput.value : "";
+      const searchValue = searchInput ? searchInput.value.toLowerCase() : "";
 
       if (nameListContainer) {
         let htmlResultText = "";
 
         for (const name of result) {
           if (
-            name.username.indexOf(searchValue) != -1 ||
-            name.name.indexOf(searchValue) != -1 ||
-            name.surname.indexOf(searchValue) != -1
+            name.username.toLowerCase().indexOf(searchValue) != -1 ||
+            name.name.toLowerCase().indexOf(searchValue) != -1 ||
+            name.surname.toLowerCase().indexOf(searchValue) != -1
           )
             htmlResultText += `<div><h3>${name.username}</h3><p>${name.name} ${name.surname}</p></div>`;
         }
