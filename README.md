@@ -1,4 +1,4 @@
-[Insert Your Name Here]
+Pongwiwat Limpasuthum
 
 # SGCU65 Frontend Recruitment
 
@@ -70,16 +70,16 @@
 
 อย่าลืม mark ว่าทำ feature ไหนแล้วด้วยการใส่ x ลงใน [ ]
 
-- [ ] เว็บไซต์มีหน้าตาเหมือนกับ UX/UI ที่กำหนดไว้
-- [ ] เว็บไซต์สามารถ Navigate ผู้ใช้ไปยัง Social Media อื่น ๆ ได้เช่น Facebook, Instagram และ Twitter
-- [ ] เว็บไซต์สามารถ Responsive ได้ (เว็บใน Mobile และ Desktop ต้องไม่เละ!)
-- [ ] เว็บไซต์มีระบบ Form Validation
+- [x] เว็บไซต์มีหน้าตาเหมือนกับ UX/UI ที่กำหนดไว้
+- [x] เว็บไซต์สามารถ Navigate ผู้ใช้ไปยัง Social Media อื่น ๆ ได้เช่น Facebook, Instagram และ Twitter
+- [x] เว็บไซต์สามารถ Responsive ได้ (เว็บใน Mobile และ Desktop ต้องไม่เละ!)
+- [x] เว็บไซต์มีระบบ Form Validation
   - ทุก field ต้องไม่ใช่ string เปล่า
   - ชื่อผู้ใช้ต้องประกอบด้วยตัวอักษรภาษาอังกฤษหรือตัวเลขเท่านั้น
   - อีเมลต้องถูกรูปแบบ
   - รหัสผ่านกับยืนยันรหัสผ่านตรงกัน
-- [ ] เมื่อกดปุ่ม Submit แล้ว เว็บไซต์จะสามารถเรียก API เพื่อส่งข้อมูลของผู้ใช้ไปให้ Backend
-- [ ] เว็บไซต์สามารถแสดง error จาก API response ได้
+- [x] เมื่อกดปุ่ม Submit แล้ว เว็บไซต์จะสามารถเรียก API เพื่อส่งข้อมูลของผู้ใช้ไปให้ Backend
+- [x] เว็บไซต์สามารถแสดง error จาก API response ได้
 
 ## Features - หน้ารายชื่อผู้ลงทะเบียน
 

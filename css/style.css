@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Prompt", sans-serif;
+  --primary-color: #de5c8e;
+  --secondary-color: #ffffff;
+  --input-border-color: #b4b4b4;
+  --success-color: #42ba96;
+  --error-color: #ff3333;
+}
+
+body {
+  position: relative;
+  background-image: url("/assets/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+}
+
+.navbar {
+  position: relative;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 100vw;
+  height: 10vh;
+  padding: 1rem 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar img {
+  height: 100%;
+}
+
+.navbar span {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+.kite {
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  height: 40vh;
+  z-index: -1;
+}
+
+.kite img {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: right;
+}
+
+.wrap-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.input-form {
+  margin: 0 5rem;
+  padding: 1.5rem 0;
+  width: 300px;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  overflow: scroll;
+}
+
+.input-form h1,
+h6 {
+  padding-bottom: 0.25rem;
+  margin: auto;
+  display: block;
+  width: 70%;
+}
+
+.input-form h6 {
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+.input-form input {
+  margin: auto;
+  display: block;
+  width: 70%;
+  margin-top: 1rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 3px;
+  line-height: 1.75;
+}
+
+.input-form input[type="submit"] {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: right;
+  margin-right: 5rem;
+}
+
+.icon-container picture {
+  padding-left: 0.3rem;
+}
+
+#popup-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+#popup-container div {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  transition: all 3s ease-in-out;
+}
+
+#success-popup {
+  color: var(--success-color);
+}
+
+#error-popup {
+  color: var(--error-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .kite {
+    display: none;
+  }
+
+  .input-form {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .icon-container {
+    justify-content: center;
+    margin: auto;
+  }
+}
